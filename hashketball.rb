@@ -118,7 +118,7 @@ def game_hash
 end
 
 def shoe_size(name)
-  shoe
+  shoe = 0
   game_hash.each do |team, data|
     if data[:players][name]
       shoe = data[:players][name][:shoe]
