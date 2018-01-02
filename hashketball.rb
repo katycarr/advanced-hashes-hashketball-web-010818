@@ -118,7 +118,11 @@ def game_hash
 end
 
 def shoe_size(name)
-  
+  game_hash.each do |team, data|
+    if data[:players][name]
+      data[:players][name][:shoe]
+    end
+  end
 end
 
 
