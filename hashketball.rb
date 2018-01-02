@@ -131,19 +131,19 @@ def num_points_scored(name)
   points
 end
 
-def shoe_size(name)
-  size = ""
-  game_hash.each do |team, data|
-    players = data[:players].keys
-    players.each do |player|
-      if name == player
-        size = data[:players][player][:shoe]
-      end
-      size
-    end
-  end
-  size
-end
+# def shoe_size(name)
+#   size = ""
+#   game_hash.each do |team, data|
+#     players = data[:players].keys
+#     players.each do |player|
+#       if name == player
+#         size = data[:players][player][:shoe]
+#       end
+#       size
+#     end
+#   end
+#   size
+# end
 
 def team_colors(name)
   colors = []
